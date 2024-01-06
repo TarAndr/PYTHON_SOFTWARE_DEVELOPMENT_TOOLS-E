@@ -1,0 +1,19 @@
+<!-- add_human.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Human</title>
+</head>
+<body>
+
+<h2>Add Human</h2>
+
+<form method="post" action="{% url 'add_human' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
